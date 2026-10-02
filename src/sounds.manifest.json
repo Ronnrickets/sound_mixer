@@ -1,0 +1,113 @@
+{
+  "$comment": "Single source of truth for every sound in Lull. Drop audio into /public/sounds/<file>. While a file is missing, the app plays a built-in synthesized placeholder generated in the browser. When you add a real recording, fill in source/author/license and set status to \"recording\". Only use CC0 / public-domain audio (or CC-BY with the author credited here).",
+  "sounds": [
+    {
+      "id": "rain",
+      "label": "Rain",
+      "description": "Steady rainfall on leaves and stone.",
+      "file": "rain.mp3",
+      "status": "placeholder",
+      "source": null,
+      "author": null,
+      "license": null,
+      "licenseUrl": null,
+      "findAt": "https://freesound.org/search/?q=rain+loop&f=license%3A%22Creative+Commons+0%22"
+    },
+    {
+      "id": "thunder",
+      "label": "Thunder",
+      "description": "Distant rolling thunder.",
+      "file": "thunder.mp3",
+      "status": "placeholder",
+      "source": null,
+      "author": null,
+      "license": null,
+      "licenseUrl": null,
+      "findAt": "https://freesound.org/search/?q=distant+thunder&f=license%3A%22Creative+Commons+0%22"
+    },
+    {
+      "id": "waves",
+      "label": "Waves",
+      "description": "Slow surf breaking on the shore.",
+      "file": "waves.mp3",
+      "status": "placeholder",
+      "source": null,
+      "author": null,
+      "license": null,
+      "licenseUrl": null,
+      "findAt": "https://freesound.org/search/?q=ocean+waves+loop&f=license%3A%22Creative+Commons+0%22"
+    },
+    {
+      "id": "wind",
+      "label": "Wind",
+      "description": "Soft gusts moving through open air.",
+      "file": "wind.mp3",
+      "status": "placeholder",
+      "source": null,
+      "author": null,
+      "license": null,
+      "licenseUrl": null,
+      "findAt": "https://freesound.org/search/?q=wind+ambience+loop&f=license%3A%22Creative+Commons+0%22"
+    },
+    {
+      "id": "birds",
+      "label": "Birds",
+      "description": "An early-morning chorus.",
+      "file": "birds.mp3",
+      "status": "placeholder",
+      "source": null,
+      "author": null,
+      "license": null,
+      "licenseUrl": null,
+      "findAt": "https://freesound.org/search/?q=birdsong+forest+morning&f=license%3A%22Creative+Commons+0%22"
+    },
+    {
+      "id": "stream",
+      "label": "Stream",
+      "description": "Water running over shallow rocks.",
+      "file": "stream.mp3",
+      "status": "placeholder",
+      "source": null,
+      "author": null,
+      "license": null,
+      "licenseUrl": null,
+      "findAt": "https://freesound.org/search/?q=creek+stream+loop&f=license%3A%22Creative+Commons+0%22"
+    },
+    {
+      "id": "fire",
+      "label": "Fire",
+      "description": "A low crackling hearth.",
+      "file": "fire.mp3",
+      "status": "placeholder",
+      "source": null,
+      "author": null,
+      "license": null,
+      "licenseUrl": null,
+      "findAt": "https://freesound.org/search/?q=fireplace+crackling+loop&f=license%3A%22Creative+Commons+0%22"
+    },
+    {
+      "id": "night",
+      "label": "Night",
+      "description": "Crickets under a warm night sky.",
+      "file": "night.mp3",
+      "status": "placeholder",
+      "source": null,
+      "author": null,
+      "license": null,
+      "licenseUrl": null,
+      "findAt": "https://freesound.org/search/?q=crickets+night+loop&f=license%3A%22Creative+Commons+0%22"
+    },
+    {
+      "id": "noise",
+      "label": "Brown noise",
+      "description": "Deep, even noise that masks distractions.",
+      "file": "noise.mp3",
+      "status": "placeholder",
+      "source": null,
+      "author": null,
+      "license": null,
+      "licenseUrl": null,
+      "findAt": "https://freesound.org/search/?q=brown+noise&f=license%3A%22Creative+Commons+0%22"
+    }
+  ]
+}

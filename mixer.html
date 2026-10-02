@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Mixer · Lull</title>
+    <meta name="description" content="Layer and balance rain, waves, thunder, birdsong and more. Your mix is saved in your browser." />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+    />
+    <script>document.documentElement.classList.remove('no-js');</script>
+    <script type="module" src="/src/mixer.js"></script>
+  </head>
+  <body class="page-mixer">
+    <a class="skip-link" href="#channels">Skip to sounds</a>
+
+    <header class="mixer-nav">
+      <div class="container nav-inner">
+        <a class="wordmark" href="/"><span class="wordmark-dot" aria-hidden="true"></span>Lull</a>
+        <span class="label">Mixer</span>
+        <a class="nav-back" href="/">About Lull</a>
+      </div>
+    </header>
+
+    <main id="main" class="container console">
+      <header class="console-head">
+        <p class="label label--cream reveal">Your soundscape</p>
+        <h1 class="console-title reveal-group">
+          <span class="mask-line"><span>Mix the room</span></span>
+          <span class="mask-line muted" style="--i: 1"><span>you want to be in.</span></span>
+        </h1>
+      </header>
+
+      <!-- Transport: play/pause, status, scope, master volume -->
+      <section class="transport card" aria-label="Playback">
+        <button id="play" class="play-btn" type="button" aria-label="Play">
+          <svg class="icon icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z" fill="currentColor" /></svg>
+          <svg class="icon icon-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="5" width="4" height="14" rx="1.2" fill="currentColor" /><rect x="13.5" y="5" width="4" height="14" rx="1.2" fill="currentColor" /></svg>
+        </button>
+
+        <div class="transport-info">
+          <p id="status" class="label label--cream" aria-live="polite">Paused</p>
+          <p id="now-playing" class="now-playing">Rain</p>
+        </div>
+
+        <canvas id="scope" class="scope" aria-hidden="true"></canvas>
+
+        <div class="master">
+          <label for="master" class="label">Master</label>
+          <input id="master" class="range" type="range" min="0" max="100" step="1" value="80" />
+          <output id="master-out" for="master" class="readout">80</output>
+        </div>
+
+        <button id="all-off" class="btn btn-ghost btn-sm" type="button">All off</button>
+      </section>
+
+      <!-- First-interaction prompt (browsers block audio until a user gesture) -->
+      <section id="gate" class="gate card card--surface" aria-labelledby="gate-title">
+        <div>
+          <p class="label">Before we begin</p>
+          <h2 id="gate-title" class="gate-title">Sound stays off until you choose to start.</h2>
+          <p id="gate-text" class="gate-text">
+            Your browser waits for a tap before playing audio. When you're ready, press Begin and your mix will fade in gently.
+          </p>
+        </div>
+        <button id="begin" class="btn btn-ink" type="button">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z" fill="currentColor" /></svg>
+          <span id="begin-label">Begin listening</span>
+        </button>
+      </section>
+
+      <!-- Channel tiles, rendered by mixer.js from the manifest -->
+      <h2 class="visually-hidden">Sounds</h2>
+      <ul id="channels" class="channels" tabindex="-1"></ul>
+
+      <p class="hint label">
+        <kbd>Space</kbd> play / pause · <kbd>Tab</kbd> move between sounds · <kbd>← →</kbd> adjust volume
+      </p>
+
+      <noscript>
+        <p class="gate-text">The mixer needs JavaScript to play audio. Please enable it and reload the page.</p>
+      </noscript>
+
+      <section id="credits" class="credits" aria-labelledby="credits-title">
+        <details>
+          <summary><span id="credits-title">Sound credits &amp; licenses</span></summary>
+          <div class="credits-body">
+            <table>
+              <thead>
+                <tr><th scope="col">Sound</th><th scope="col">Source</th><th scope="col">License</th></tr>
+              </thead>
+              <tbody id="credits-rows"></tbody>
+            </table>
+          </div>
+        </details>
+      </section>
+    </main>
+  </body>
+</html>

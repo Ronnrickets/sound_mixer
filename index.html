@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Lull · Ambient sound mixer</title>
+    <meta
+      name="description"
+      content="Layer rain, waves, distant thunder, birdsong and more into your own calm soundscape. Free, no account, right in your browser."
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta property="og:title" content="Lull · Ambient sound mixer" />
+    <meta property="og:description" content="Layer rain, waves, thunder and birdsong into your own calm soundscape." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+    />
+    <script>document.documentElement.classList.remove('no-js');</script>
+    <script type="module" src="/src/landing.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-nav">
+      <div class="container nav-inner">
+        <a class="wordmark" href="/"><span class="wordmark-dot" aria-hidden="true"></span>Lull</a>
+        <nav aria-label="Primary">
+          <ul class="nav-links">
+            <li><a href="#how">How it works</a></li>
+            <li><a href="#library">Sounds</a></li>
+            <li><a href="#principles">Principles</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-primary btn-sm" href="/mixer">Open mixer</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ============ Hero ============ -->
+      <section class="hero container" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="label label--cream reveal">Ambient sound mixer · 9 channels</p>
+          <h1 id="hero-title" class="display reveal-group">
+            <span class="mask-line" style="--i: 0"><span>Quiet the noise.</span></span>
+            <span class="mask-line muted" style="--i: 1"><span>Compose your calm.</span></span>
+          </h1>
+          <p class="lede reveal" style="--i: 2">
+            Lull layers rain, waves, distant thunder and birdsong into one gentle soundscape. Balance each sound until
+            the room feels right. Your mix will be waiting exactly as you left it.
+          </p>
+          <div class="hero-actions reveal" style="--i: 3">
+            <a class="btn btn-primary" href="/mixer">
+              Open the mixer
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+            <a class="btn btn-ghost" href="#how">How it works</a>
+          </div>
+          <dl class="hero-stats reveal" style="--i: 4">
+            <div><dt class="label">Sounds</dt><dd>09</dd></div>
+            <div><dt class="label">Sign-up</dt><dd>None</dd></div>
+            <div><dt class="label">Price</dt><dd>Free</dd></div>
+          </dl>
+        </div>
+
+        <figure class="hero-panel card reveal" style="--i: 2">
+          <div class="panel-head">
+            <span class="label label--cream"><span class="live-dot" aria-hidden="true"></span>Live mix</span>
+            <span class="label">04 layers</span>
+          </div>
+          <canvas class="scape" width="640" height="300" aria-hidden="true"></canvas>
+          <ul class="panel-channels" aria-hidden="true">
+            <li style="--v: 0.68; --c: 0"><span>Rain</span><span class="meter"><i></i></span><span class="num">68</span></li>
+            <li style="--v: 0.42; --c: 1"><span>Waves</span><span class="meter"><i></i></span><span class="num">42</span></li>
+            <li style="--v: 0.30; --c: 2"><span>Birds</span><span class="meter"><i></i></span><span class="num">30</span></li>
+            <li style="--v: 0.18; --c: 3"><span>Thunder</span><span class="meter"><i></i></span><span class="num">18</span></li>
+          </ul>
+          <figcaption class="visually-hidden">An illustration of four ambient sounds blended at different levels.</figcaption>
+        </figure>
+      </section>
+
+      <!-- ============ Bento features ============ -->
+      <section class="section container" aria-labelledby="features-title">
+        <header class="section-head">
+          <p class="label reveal">Designed to disappear</p>
+          <h2 id="features-title" class="section-title reveal-group">
+            <span class="mask-line"><span>Everything you need.</span></span>
+            <span class="mask-line muted" style="--i: 1"><span>Nothing that asks for attention.</span></span>
+          </h2>
+        </header>
+
+        <div class="bento">
+          <article class="bento-card card bento-wide reveal">
+            <div class="bento-copy">
+              <p class="label">01 · Independent faders</p>
+              <h3>Every sound on its own fader.</h3>
+              <p>Bring the rain forward, let the surf sit low, add a whisper of wind. Each layer has its own volume, and changes glide rather than jump.</p>
+            </div>
+            <div class="faders" aria-hidden="true">
+              <span style="--v: 0.72"></span><span style="--v: 0.38"></span><span style="--v: 0.55"></span>
+              <span style="--v: 0.2"></span><span style="--v: 0.64"></span><span style="--v: 0.3"></span>
+              <span style="--v: 0.46"></span>
+            </div>
+          </article>
+
+          <article class="bento-card card card--surface reveal" style="--i: 1">
+            <p class="label">02 · Gapless</p>
+            <h3>Loops you'll never notice.</h3>
+            <p>Each recording's end is blended into its beginning, so it plays on without a gap, click or seam.</p>
+            <svg class="loop-art" viewBox="0 0 120 60" fill="none" stroke="currentColor" stroke-width="1.25" aria-hidden="true">
+              <path d="M30 30c0-11 9-18 18-18 16 0 24 36 42 36 9 0 18-7 18-18S99 12 90 12C72 12 64 48 48 48c-9 0-18-7-18-18z" />
+            </svg>
+          </article>
+
+          <article class="bento-card card reveal" style="--i: 2">
+            <p class="label">03 · Remembered</p>
+            <h3>Your mix, kept.</h3>
+            <p>Lull saves your balance in this browser and restores it on your next visit. Nothing is sent anywhere.</p>
+          </article>
+
+          <article class="bento-card card reveal" style="--i: 3">
+            <p class="label">04 · Considerate</p>
+            <h3>Silent until you're ready.</h3>
+            <p>No surprise autoplay. Sound begins only when you press play, then fades in softly.</p>
+          </article>
+
+          <article class="bento-card card reveal" style="--i: 4">
+            <p class="label">05 · For everyone</p>
+            <h3>Any screen. Any hand.</h3>
+            <p>Works on a bedside phone or a desk monitor, from the keyboard, with clear screen-reader labels.</p>
+            <ul class="kbd-list" aria-label="Keyboard controls">
+              <li><kbd>Space</kbd><span>Play / pause</span></li>
+              <li><kbd>Tab</kbd><span>Move between sounds</span></li>
+              <li><kbd>← →</kbd><span>Adjust volume</span></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ How it works ============ -->
+      <section id="how" class="section container" aria-labelledby="how-title">
+        <header class="section-head">
+          <p class="label reveal">How it works</p>
+          <h2 id="how-title" class="section-title reveal-group">
+            <span class="mask-line"><span>Three steps to</span></span>
+            <span class="mask-line muted" style="--i: 1"><span>a quieter mind.</span></span>
+          </h2>
+        </header>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num label label--cream">01</span>
+            <h3>Choose your sounds</h3>
+            <p>Tap any sound to bring it in. Start with rain. It's a good place to begin.</p>
+          </li>
+          <li class="step reveal" style="--i: 1">
+            <span class="step-num label label--cream">02</span>
+            <h3>Find the balance</h3>
+            <p>Slide each layer up or down until nothing stands out and everything belongs.</p>
+          </li>
+          <li class="step reveal" style="--i: 2">
+            <span class="step-num label label--cream">03</span>
+            <h3>Let it run</h3>
+            <p>Work, read or drift off. The soundscape plays on seamlessly for as long as you need.</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ============ Sound library ============ -->
+      <section id="library" class="section container" aria-labelledby="library-title">
+        <header class="section-head section-head--row">
+          <div>
+            <p class="label reveal">The library</p>
+            <h2 id="library-title" class="section-title reveal-group">
+              <span class="mask-line"><span>Nine sounds,</span></span>
+              <span class="mask-line muted" style="--i: 1"><span>endless rooms.</span></span>
+            </h2>
+          </div>
+          <p class="section-note reveal">Each sound is chosen to blend with the others. Nothing sharp, nothing that pulls your attention.</p>
+        </header>
+        <ul class="library" id="library-list">
+          <!-- Rendered from src/sounds.manifest.json by landing.js -->
+        </ul>
+      </section>
+
+      <!-- ============ Principles ============ -->
+      <section id="principles" class="section container" aria-labelledby="principles-title">
+        <header class="section-head">
+          <p class="label reveal">Principles</p>
+          <h2 id="principles-title" class="section-title reveal-group">
+            <span class="mask-line"><span>Calm, by design.</span></span>
+          </h2>
+        </header>
+        <div class="principles">
+          <div class="principle reveal">
+            <h3>No account</h3>
+            <p>Open the page and listen. There's nothing to sign up for and nothing to remember.</p>
+          </div>
+          <div class="principle reveal" style="--i: 1">
+            <h3>No tracking</h3>
+            <p>No analytics, no ads, no cookies. Your mix lives only in your own browser storage.</p>
+          </div>
+          <div class="principle reveal" style="--i: 2">
+            <h3>Open sounds</h3>
+            <p>Recordings are public-domain or CC0, and each one is credited in the mixer.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Closing CTA ============ -->
+      <section class="section container">
+        <div class="cta card card--surface reveal">
+          <div>
+            <p class="label">Ready when you are</p>
+            <h2 class="cta-title">Your quiet is one tap away.</h2>
+          </div>
+          <a class="btn btn-ink" href="/mixer">
+            Start listening
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="wordmark" href="/"><span class="wordmark-dot" aria-hidden="true"></span>Lull</a>
+        <p class="label">An ambient sound mixer · Sounds CC0 / public domain</p>
+        <a class="footer-link" href="/mixer#credits">Sound credits</a>
+      </div>
+    </footer>
+  </body>
+</html>

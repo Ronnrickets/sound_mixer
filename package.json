@@ -1,0 +1,18 @@
+{
+  "name": "lull-ambient-mixer",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Lull — a calm ambient sound mixer. Layer rain, waves, thunder, birdsong and more.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}
